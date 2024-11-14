@@ -1,0 +1,26 @@
+#include <DHT.h>
+#include <DHT_U.h>
+
+int led = 2;
+int SENSOR = 3;
+int temperatura;
+int humedad;
+DHT dht(SENSOR, DHT11);
+
+void setup() {
+ Serial.begin(9600);
+ dht.begin();
+ pinMode(led, OUTPUT);
+}
+
+void loop() {
+ temperatura = dht.readTemperature();
+ humedad = dht.readHumidity();
+ delay(1);
+ 
+ Serial.print("Temp: "); Serial.print(temperatura); Serial.print("°C, Hum: "); Serial.print(humedad); Serial.println("%");
+ delay(500);
+ 
+ if (temperatura >= 28) digitalWrite(led, HIGH); 
+ else digitalWrite(led, LOW);
+}
