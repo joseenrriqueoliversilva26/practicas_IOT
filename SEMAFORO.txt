@@ -1,0 +1,45 @@
+const int verde = 13;
+const int amarillo = 12;
+const int rojo = 11;
+
+void setup() {
+ pinMode(verde, OUTPUT);
+ pinMode(amarillo, OUTPUT);
+ pinMode(rojo, OUTPUT);
+}
+
+void loop() {
+ // Rojo encendido por 6 segundos
+ digitalWrite(rojo, HIGH);
+ digitalWrite(verde, LOW);
+ digitalWrite(amarillo, LOW);
+ delay(6000);
+ 
+ // Verde encendido por 3 segundos
+ digitalWrite(rojo, LOW);
+ digitalWrite(verde, HIGH);
+ digitalWrite(amarillo, LOW);
+ delay(3000);
+ 
+ // Parpadeo del verde (1 segundo)
+ for (int i = 0; i < 2; i++) {
+   digitalWrite(verde, LOW);
+   delay(250);
+   digitalWrite(verde, HIGH);
+   delay(250);
+ }
+ digitalWrite(verde, LOW);
+ 
+ // Amarillo encendido por 2 segundos
+ digitalWrite(amarillo, HIGH);
+ delay(2000);
+ 
+ // Parpadeo del amarillo (1 segundo)
+ for (int i = 0; i < 2; i++) {
+   digitalWrite(amarillo, LOW);
+   delay(250);
+   digitalWrite(amarillo, HIGH);
+   delay(250);
+ }
+ digitalWrite(amarillo, LOW);
+}
