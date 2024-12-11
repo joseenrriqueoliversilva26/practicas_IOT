@@ -1,0 +1,57 @@
+proyectos de arduino - 3er parcial  
+
+introducción  
+explora una variedad de códigos diseñados para implementar soluciones prácticas y didácticas con arduino. desde controles simples de leds hasta sistemas de seguridad básicos, cada proyecto incluye una descripción detallada y sus aplicaciones.
+
+
+
+proyecto 1: display de 7 segmentos con números aleatorios  
+objetivo: controlar un display de 7 segmentos para mostrar números aleatorios del 1 al 6 mediante un pulsador.  
+características principales:  
+- generación de números aleatorios: cada 50 ms se genera un número, salvo que el pulsador detenga la operación.  
+- control preciso: se utiliza un array para gestionar la configuración de segmentos.  
+- aplicaciones: simulación de dados electrónicos y enseñanza básica de electrónica digital.  
+
+
+
+proyecto 2: leds controlados por joystick analógico  
+objetivo: encender leds según la posición del joystick y un led adicional para una pulsación.  
+características principales:  
+- interacción con sensores: se monitorizan los ejes x, y y el botón del joystick.  
+- indicadores visuales: leds representan las direcciones del joystick.  
+- aplicaciones: interfaces en videojuegos y sistemas robóticos.  
+
+
+
+proyecto 3: teclado matricial para contraseñas  
+objetivo: crear un sistema básico de autenticación con un teclado 4x4.  
+características principales:  
+- seguridad: verificación contra una contraseña predefinida.  
+- indicadores led: verde para contraseñas correctas, rojo para incorrectas.  
+- aplicaciones: sistemas básicos de acceso y práctica con hardware matricial.  
+
+
+
+proyecto 4: led rgb controlado por botones  
+objetivo: gestionar los colores de un led rgb mediante tres botones, cada uno asignado a un color primario.  
+características principales:  
+- control modular: la intensidad de los colores se regula mediante pwm.  
+- aplicaciones: aprendizaje de mezclas de colores y control básico de iluminación.  
+
+
+
+proyecto 5: sistema de zumbador  
+objetivo: reproducir melodías con un zumbador controlado por pulsadores.  
+características principales:  
+- interacción dinámica: alternar entre dos melodías y reiniciar el sistema mediante un pulsador.  
+- materiales: arduino, zumbador, pulsador y resistencias si es necesario.  
+- aplicaciones: simulación de alarmas y práctica con señales audibles.  
+
+
+
+proyecto 6: control de puerta con servomotor  
+objetivo: simular el control de acceso mediante un servomotor para abrir y cerrar una puerta.  
+características principales:  
+- movimiento gradual: control preciso del servomotor mediante pequeños pasos.  
+- indicadores: leds reflejan el estado abierto o cerrado.  
+- aplicaciones: sistemas de acceso y automatización doméstica.  
